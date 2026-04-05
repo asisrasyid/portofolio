@@ -83,4 +83,70 @@ export const projects: Project[] = [
     live: "https://todoapps-simple.vercel.app",
     featured: true,
   },
+  {
+    id: "local-claude-chat",
+    slug: "local-claude-chat",
+    title: "Local Claude Chat",
+    description:
+      "A local Next.js workspace that auto-loads project context and connects to Claude API — a personal AI co-pilot for development decisions.",
+    longDescription:
+      "Built as a personal tool to replace scattered note-taking with structured, contextual AI discussions. Every conversation auto-loads the current sprint, stack decisions, and project context — so Claude always knows exactly where the project stands.",
+    highlights: [
+      "Auto-loads .agent/context.md, snap.md, and decisions.md before each session",
+      "SheetMaster SDK integration — Claude knows your current sprint tasks",
+      "Persistent conversation history per project",
+      "Markdown-rendered responses with code syntax highlighting",
+    ],
+    challenges:
+      "Designing a context injection system that stays under Claude's context window while including all relevant project state — prioritizing snap.md freshness over log history.",
+    outcome:
+      "Every architectural decision is now discussed with full project context. Eliminated 10+ minutes of re-explaining project background — Claude already knows everything.",
+    tech: ["Next.js", "TypeScript", "Anthropic API", "Tailwind CSS"],
+    github: "https://github.com/asisrasyid/local-claude-chat",
+    featured: false,
+  },
+  {
+    id: "telegram-task-bot",
+    slug: "telegram-task-bot",
+    title: "Telegram Task Bot",
+    description:
+      "Telegram bot for AI-assisted task management — create, track, and update project tasks via chat using Claude and SheetMaster SDK.",
+    longDescription:
+      "Eliminates context-switching by letting you manage your entire project board without leaving Telegram. Integrates with SheetMaster SDK, supports natural language task creation via /task-claude, and keeps your sprint always up to date.",
+    highlights: [
+      "/task-claude — describe in plain language, Claude creates structured task + subtasks",
+      "/snap — instant project status summary in chat",
+      "/boards, /done — full board management from Telegram",
+      "Deployed on Railway with zero-downtime restarts",
+    ],
+    challenges:
+      "Maintaining conversation context within Telegram's stateless message model while giving Claude enough project context to create meaningful, actionable tasks.",
+    outcome:
+      "Task creation time dropped from 3-5 minutes to under 30 seconds. Now used daily as the primary interface for sprint management.",
+    tech: ["Node.js", "Telegraf", "Anthropic API", "SheetMaster SDK", "Railway"],
+    github: "https://github.com/asisrasyid/telegram-task-bot",
+    featured: false,
+  },
+  {
+    id: "sheetmaster-sdk",
+    slug: "sheetmaster-sdk",
+    title: "SheetMaster SDK",
+    description:
+      "JavaScript/TypeScript SDK for SheetMaster — a Google Sheets-based project management API. Simplifies board, task, and subtask operations for any Node.js app.",
+    longDescription:
+      "SheetMaster uses Google Sheets as a lightweight project management backend. This SDK wraps the raw API into a clean, typed interface — making it easy to integrate board and task management into any tool: bots, CLIs, web apps, or AI agents.",
+    highlights: [
+      "Typed methods for all SheetMaster actions: getBoards, getBoard, createTask, moveTask, updateSubTask",
+      "Handles redirect-based Google Apps Script authentication automatically",
+      "Used by Telegram Task Bot and Local Claude Chat internally",
+      "Zero dependencies beyond Node.js built-ins",
+    ],
+    challenges:
+      "Google Apps Script redirects POST requests to GET — the SDK needed a custom HTTP client that follows redirects correctly without losing the request body.",
+    outcome:
+      "Reusable across all personal projects — any tool can now integrate SheetMaster in minutes instead of re-implementing the HTTP layer from scratch.",
+    tech: ["Node.js", "TypeScript", "Google Apps Script"],
+    github: "https://github.com/asisrasyid/sheetmaster-sdk",
+    featured: false,
+  },
 ];
