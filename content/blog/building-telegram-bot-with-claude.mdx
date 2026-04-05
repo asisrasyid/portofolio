@@ -1,0 +1,47 @@
+---
+title: "Building a Telegram Task Bot Powered by Claude"
+date: "2026-04-01"
+description: "How I built a Telegram bot that turns natural language messages into structured project tasks using Claude API."
+tags: ["project", "Claude API", "Node.js", "Telegram"]
+---
+
+I hate context-switching. Every time I had a task idea while doing something else, I'd have to open a browser, navigate to my project board, fill out a form — by which point I'd either forgotten half the details or lost my focus.
+
+So I built a Telegram bot that does it for me.
+
+## The Core Idea
+
+```
+/task-claude Build a dark mode toggle with localStorage persistence
+```
+
+Claude receives this message, infers the full task structure (title, description, priority, relevant subtasks), and creates it in SheetMaster via API.
+
+The whole flow takes under 30 seconds. No form, no navigation, no context switch.
+
+## The Interesting Technical Parts
+
+### Context Injection
+
+The bot pulls the current `snap.md` before every `/task-claude` call. Claude knows:
+- What project I'm in
+- What sprint I'm on
+- What similar tasks already exist
+
+This prevents duplicates and ensures new tasks fit the existing structure.
+
+### Tool Design
+
+Getting Claude to output *reliably structured* task data took more iteration than I expected. The key insight: don't ask Claude to return JSON directly. Ask it to reason first, then output.
+
+```
+Think about what this task requires, then output the task as JSON with these exact fields: ...
+```
+
+The "think first" step dramatically reduced malformed outputs.
+
+## What's Next
+
+I want to add `/standup` — a command that reads my completed tasks and generates a morning standup summary. One command, one message, zero friction.
+
+Building in public. Watch this space.
