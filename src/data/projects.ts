@@ -15,70 +15,72 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "finance-ai-agent",
-    slug: "finance-ai-agent",
-    title: "Finance AI Agent",
+    id: "tradeos-framework",
+    slug: "tradeos-framework",
+    title: "TradeOS Framework",
     description:
-      "AI-powered personal finance analyzer — turns raw transaction data into actionable insights via natural language conversation with Claude.",
+      "Algorithmic trading system using Hidden Markov Models for market pattern recognition — integrated with MetaTrader 5 and Claude AI for intelligent trade execution.",
     longDescription:
-      "Built with Python, Anthropic Claude API, and Streamlit. Replaces manual spreadsheet analysis with a conversational AI interface that understands context, flags anomalies, and provides personalized financial recommendations.",
+      "TradeOS is a full-stack algorithmic trading framework that combines statistical machine learning (Hidden Markov Models) with AI decision-making. The system connects MetaTrader 5 for real-time market data and execution, a FastAPI backend for signal processing, and Claude AI for contextual trade reasoning beyond pure statistics.",
     highlights: [
-      "Natural language query over personal transaction data",
-      "Automatic anomaly detection and spending pattern analysis",
-      "Claude-powered recommendations tailored to user's financial habits",
-      "CSV/Excel import — zero manual data entry",
+      "Hidden Markov Models for detecting latent market regimes (trend, consolidation, reversal)",
+      "Real-time integration with MetaTrader 5 via Python bridge",
+      "Claude AI layer for contextual risk assessment and execution approval",
+      "ASP.NET dashboard for monitoring positions, P&L, and model confidence",
+      "PostgreSQL for trade history, model states, and performance analytics",
     ],
     challenges:
-      "Structuring unstructured financial data into a format Claude could reason about accurately, while keeping the context window efficient across large transaction histories.",
+      "Synchronizing real-time market data with HMM state inference while keeping latency low enough for meaningful execution — and designing the Claude AI prompt layer to reason about risk without overriding statistical signals.",
     outcome:
-      "Reduced manual finance review time from ~2 hours/month to under 10 minutes. Demonstrated how Claude can serve as a domain-specific analyst with the right context engineering.",
-    tech: ["Python", "Anthropic API", "Streamlit", "Pandas"],
-    github: "https://github.com/asisrasyid/finance-ai-agent",
-    live: "https://finance-ai-agent.streamlit.app",
+      "A production-grade trading framework that demonstrates the intersection of quantitative finance, machine learning, and AI reasoning — one of the most technically complex personal projects built independently.",
+    tech: ["Python", "FastAPI", "React", "ASP.NET", "PostgreSQL", "Claude AI", "MetaTrader 5"],
+    github: "https://github.com/asisrasyid/-tradeos-framework",
     featured: true,
   },
   {
-    id: "telegram-task-bot",
-    slug: "telegram-task-bot",
-    title: "Telegram Task Bot",
+    id: "finance-app",
+    slug: "finance-app",
+    title: "Finance App",
     description:
-      "Telegram bot for AI-assisted task management — create, track, and update project tasks via chat commands powered by Claude.",
+      "PWA for personal finance — transactions, budgeting, and savings planning. Works fully offline with background sync.",
     longDescription:
-      "Eliminates context-switching by letting you manage your entire project board without leaving Telegram. Integrates with SheetMaster API, supports natural language task creation via /task-claude, and keeps your sprint always up to date.",
+      "A Progressive Web App built for daily personal finance management. Tracks income and expenses, supports budget planning per category, and includes savings goal tracking. Designed to work offline-first — all data is available without internet, synced when connection is restored.",
     highlights: [
-      "/task-claude — describe in plain language, Claude creates structured task + subtasks",
-      "/snap — instant project status summary in chat",
-      "/boards, /done — full board management from Telegram",
-      "Deployed on Railway with zero-downtime restarts",
+      "Full offline support via Service Worker and IndexedDB caching",
+      "Transaction categorization with visual budget tracking",
+      "Savings goal planner with progress visualization",
+      "Installable as a native-like app on iOS and Android",
     ],
     challenges:
-      "Maintaining conversation context within Telegram's stateless message model while giving Claude enough project context to create meaningful, actionable tasks.",
+      "Implementing reliable offline-first data sync without conflicts, and designing a UI that feels native on both mobile and desktop without a framework dependency.",
     outcome:
-      "Task creation time dropped from 3-5 minutes to under 30 seconds. Now used daily as the primary interface for sprint management.",
-    tech: ["Node.js", "Telegraf", "Anthropic API", "Railway"],
-    github: "https://github.com/asisrasyid/telegram-task-bot",
+      "A fully functional finance tracker used for daily personal finance management, demonstrating deep JavaScript and PWA capability without heavy dependencies.",
+    tech: ["PWA", "JavaScript", "CSS", "Service Worker", "IndexedDB"],
+    github: "https://github.com/asisrasyid/updat-mobile-app-fn",
+    live: "https://updat-mobile-app-fn.vercel.app",
     featured: true,
   },
   {
-    id: "local-claude-chat",
-    slug: "local-claude-chat",
-    title: "Local Claude Chat",
+    id: "todo-simple",
+    slug: "todo-simple",
+    title: "Todo Simple",
     description:
-      "A local Next.js workspace that auto-loads project context and connects to Claude API — a personal AI co-pilot for development discussions.",
+      "Minimalist productivity app with Google Apps Script sync — clean UI, fast, and always in sync across devices.",
     longDescription:
-      "Always-on AI context: every conversation knows your current sprint, stack, and decisions. Built as a personal tool to replace scattered note-taking with structured, contextual AI discussions that inform real decisions.",
+      "A minimalist task management app built with Next.js and TypeScript. Focuses on speed and simplicity — no friction, just tasks. Syncs with Google Sheets via Google Apps Script as a lightweight backend, making it free to run and easy to extend.",
     highlights: [
-      "Auto-loads .agent/context.md, snap.md, and decisions.md before each session",
-      "SheetMaster integration — Claude knows your current sprint tasks",
-      "Persistent conversation history per project",
-      "Markdown-rendered responses with code highlighting",
+      "Google Apps Script integration for free cloud sync",
+      "Instant add/complete/delete with optimistic UI updates",
+      "Clean, distraction-free interface built with Tailwind",
+      "Persistent state — tasks survive page refresh and device switches",
     ],
     challenges:
-      "Designing a context injection system that stays under Claude's context window while including all the relevant project state — prioritizing snap.md freshness over log history.",
+      "Keeping the sync layer with Google Apps Script responsive enough to feel instant, while handling rate limits and network failures gracefully.",
     outcome:
-      "Every architectural decision is now discussed with full project context. Reduced re-explaining project background from 10+ minutes to 0 — Claude already knows everything.",
-    tech: ["Next.js", "TypeScript", "Anthropic API", "Tailwind CSS"],
-    github: "https://github.com/asisrasyid/local-claude-chat",
+      "A daily-use productivity tool that proves you don't need a complex backend to build something genuinely useful — and a good demonstration of full-stack thinking with minimal infrastructure.",
+    tech: ["Next.js", "TypeScript", "Google Apps Script", "Tailwind CSS"],
+    github: "https://github.com/asisrasyid/todoapps-simple",
+    live: "https://todoapps-simple.vercel.app",
     featured: true,
   },
 ];

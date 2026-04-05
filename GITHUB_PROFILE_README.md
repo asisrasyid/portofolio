@@ -1,33 +1,50 @@
 # Hi, I'm Muhammad Azis 👋
 
-**Full-Stack Developer · AI Agent Enthusiast · System Automation**
+**Full-Stack Developer · AI Enthusiast · .NET & Python**
 
-Self-taught developer who started with zero IT background, now building AI-powered systems and automation tools.
+Self-taught developer with a background outside IT — driven by curiosity and a refusal to stop building. I work across the full stack, from C# ASP.NET systems to Python AI agents and modern React frontends.
 
 ---
 
 ### What I'm Working On
 
-- 🤖 **AI Agents** — multi-agent architectures, LLM optimization, context engineering
-- ⚡ **Automation** — systems that reduce manual work to near-zero
-- 🌐 **Full-Stack** — Next.js, Node.js, Python, TypeScript
+- 🤖 **AI Agents** — LLM integration, context engineering, autonomous systems
+- 📈 **Algorithmic Trading** — HMM-based market analysis + MetaTrader 5 integration  
+- ⚡ **Automation** — reducing manual work to near-zero with smart systems
 
-### Recent Projects
+### Featured Projects
 
 | Project | Stack | Description |
 |---------|-------|-------------|
-| [Finance AI Agent](https://github.com/asisrasyid/finance-ai-agent) | Python · Claude API · Streamlit | Natural language personal finance analysis |
-| [Telegram Task Bot](https://github.com/asisrasyid/telegram-task-bot) | Node.js · Telegraf · Claude API | AI-assisted task management via Telegram |
-| [Local Claude Chat](https://github.com/asisrasyid/local-claude-chat) | Next.js · Claude API | Context-aware AI workspace for development |
+| [TradeOS Framework](https://github.com/asisrasyid/-tradeos-framework) | Python · FastAPI · ASP.NET · Claude AI | Algorithmic trading with Hidden Markov Models + AI execution |
+| [Finance App](https://github.com/asisrasyid/updat-mobile-app-fn) · [live ↗](https://updat-mobile-app-fn.vercel.app) | PWA · JavaScript · CSS | Personal finance PWA — offline-first, works without internet |
+| [Todo Simple](https://github.com/asisrasyid/todoapps-simple) · [live ↗](https://todoapps-simple.vercel.app) | Next.js · TypeScript | Minimalist task app with Google Apps Script sync |
 
 ### Tech Stack
 
+**Frontend**  
 ![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&logo=nextdotjs)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=flat-square&logo=jquery&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+
+**Backend / .NET**  
+![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=csharp&logoColor=white)
+![ASP.NET](https://img.shields.io/badge/ASP.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![.NET MVC](https://img.shields.io/badge/.NET_MVC-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![.NET Core](https://img.shields.io/badge/.NET_Core-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+
+**Database**  
+![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+
+**AI & Tools**  
 ![Claude API](https://img.shields.io/badge/Claude_API-D4A015?style=flat-square&logo=anthropic&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
 ---
 
