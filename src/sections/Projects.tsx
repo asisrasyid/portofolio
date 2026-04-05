@@ -39,7 +39,7 @@ export default function Projects() {
           className="mt-10 text-center"
         >
           <a
-            href="https://github.com/muhammadazis"
+            href="https://github.com/asisrasyid"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-[#94a3b8] hover:text-[#06b6d4] transition-colors text-sm font-medium"

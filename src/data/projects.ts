@@ -33,7 +33,7 @@ export const projects: Project[] = [
     outcome:
       "Reduced manual finance review time from ~2 hours/month to under 10 minutes. Demonstrated how Claude can serve as a domain-specific analyst with the right context engineering.",
     tech: ["Python", "Anthropic API", "Streamlit", "Pandas"],
-    github: "https://github.com/muhammadazis/finance-ai-agent",
+    github: "https://github.com/asisrasyid/finance-ai-agent",
     live: "https://finance-ai-agent.streamlit.app",
     featured: true,
   },
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     outcome:
       "Task creation time dropped from 3-5 minutes to under 30 seconds. Now used daily as the primary interface for sprint management.",
     tech: ["Node.js", "Telegraf", "Anthropic API", "Railway"],
-    github: "https://github.com/muhammadazis/telegram-task-bot",
+    github: "https://github.com/asisrasyid/telegram-task-bot",
     featured: true,
   },
   {
@@ -78,7 +78,7 @@ export const projects: Project[] = [
     outcome:
       "Every architectural decision is now discussed with full project context. Reduced re-explaining project background from 10+ minutes to 0 — Claude already knows everything.",
     tech: ["Next.js", "TypeScript", "Anthropic API", "Tailwind CSS"],
-    github: "https://github.com/muhammadazis/local-claude-chat",
+    github: "https://github.com/asisrasyid/local-claude-chat",
     featured: true,
   },
 ];

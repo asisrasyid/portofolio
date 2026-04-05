@@ -16,9 +16,9 @@ Self-taught developer who started with zero IT background, now building AI-power
 
 | Project | Stack | Description |
 |---------|-------|-------------|
-| [Finance AI Agent](https://github.com/muhammadazis/finance-ai-agent) | Python · Claude API · Streamlit | Natural language personal finance analysis |
-| [Telegram Task Bot](https://github.com/muhammadazis/telegram-task-bot) | Node.js · Telegraf · Claude API | AI-assisted task management via Telegram |
-| [Local Claude Chat](https://github.com/muhammadazis/local-claude-chat) | Next.js · Claude API | Context-aware AI workspace for development |
+| [Finance AI Agent](https://github.com/asisrasyid/finance-ai-agent) | Python · Claude API · Streamlit | Natural language personal finance analysis |
+| [Telegram Task Bot](https://github.com/asisrasyid/telegram-task-bot) | Node.js · Telegraf · Claude API | AI-assisted task management via Telegram |
+| [Local Claude Chat](https://github.com/asisrasyid/local-claude-chat) | Next.js · Claude API | Context-aware AI workspace for development |
 
 ### Tech Stack
 

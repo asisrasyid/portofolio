@@ -6,7 +6,7 @@ export default function Footer() {
         <p>© {year} Muhammad Azis. Built with Next.js + Tailwind.</p>
         <div className="flex items-center gap-6">
           <a
-            href="https://github.com/muhammadazis"
+            href="https://github.com/asisrasyid"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#f1f5f9] transition-colors"

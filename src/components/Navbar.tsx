@@ -51,7 +51,7 @@ export default function Navbar() {
           ))}
           <li>
             <a
-              href="https://github.com/muhammadazis"
+              href="https://github.com/asisrasyid"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 rounded-lg border border-[#06b6d4] text-[#06b6d4] text-sm font-medium hover:bg-[#06b6d4]/10 transition-all"
@@ -105,7 +105,7 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="https://github.com/muhammadazis"
+                href="https://github.com/asisrasyid"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#06b6d4] font-medium"
