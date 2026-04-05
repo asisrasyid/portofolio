@@ -1,24 +1,32 @@
 # Hi, I'm Muhammad Azis 👋
 
-**Full-Stack Developer · AI Enthusiast · .NET & Python**
+**Full-Stack Developer · AI Agent Builder · .NET & Python**
 
-Self-taught developer with a background outside IT — driven by curiosity and a refusal to stop building. I work across the full stack, from C# ASP.NET systems to Python AI agents and modern React frontends.
+Self-taught developer with a background outside IT — driven by curiosity and a refusal to stop building. I work across the full stack, from C# ASP.NET enterprise systems to Python AI agents and modern React frontends.
 
 ---
 
 ### What I'm Working On
 
-- 🤖 **AI Agents** — LLM integration, context engineering, autonomous systems
-- 📈 **Algorithmic Trading** — HMM-based market analysis + MetaTrader 5 integration  
-- ⚡ **Automation** — reducing manual work to near-zero with smart systems
+- 🤖 **AI Agents** — autonomous systems, LLM integration, context engineering
+- 📈 **Algorithmic Trading** — HMM-based market analysis + MetaTrader 5
+- 🛠️ **Developer Tools** — SDKs, CLIs, and agent infrastructure
+
+---
 
 ### Featured Projects
 
 | Project | Stack | Description |
 |---------|-------|-------------|
-| [TradeOS Framework](https://github.com/asisrasyid/-tradeos-framework) | Python · FastAPI · ASP.NET · Claude AI | Algorithmic trading with Hidden Markov Models + AI execution |
-| [Finance App](https://github.com/asisrasyid/updat-mobile-app-fn) · [live ↗](https://updat-mobile-app-fn.vercel.app) | PWA · JavaScript · CSS | Personal finance PWA — offline-first, works without internet |
+| [TradeOS Framework](https://github.com/asisrasyid/tradeos-framework) | Python · FastAPI · ASP.NET · Claude AI | Algorithmic trading with Hidden Markov Models + AI execution |
+| [SheetMaster](https://github.com/asisrasyid/SheetMaster) | Google Apps Script · JS | SaaS project management API built on Google Sheets |
+| [SheetMaster SDK](https://github.com/asisrasyid/sheetmaster-sdk) | TypeScript · Node.js | Plugin that connects AI agents & apps to SheetMaster task boards |
+| [Local Claude Code CLI](https://github.com/asisrasyid/local-claude-code-API-CLI) | TypeScript · Claude Code | AI Agent CLI — context-aware autonomous task solver |
+| [Telegram Task Bot](https://github.com/asisrasyid/tg-task-bot) | Node.js · Telegraf · Claude API | AI-assisted task management via Telegram |
+| [Finance App](https://github.com/asisrasyid/updat-mobile-app-fn) · [live ↗](https://updat-mobile-app-fn.vercel.app) | PWA · JavaScript | Personal finance PWA — offline-first |
 | [Todo Simple](https://github.com/asisrasyid/todoapps-simple) · [live ↗](https://todoapps-simple.vercel.app) | Next.js · TypeScript | Minimalist task app with Google Apps Script sync |
+
+---
 
 ### Tech Stack
 
@@ -37,6 +45,7 @@ Self-taught developer with a background outside IT — driven by curiosity and a
 ![.NET Core](https://img.shields.io/badge/.NET_Core-512BD4?style=flat-square&logo=dotnet&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 
 **Database**  
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white)
@@ -45,6 +54,7 @@ Self-taught developer with a background outside IT — driven by curiosity and a
 **AI & Tools**  
 ![Claude API](https://img.shields.io/badge/Claude_API-D4A015?style=flat-square&logo=anthropic&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Google Apps Script](https://img.shields.io/badge/Apps_Script-4285F4?style=flat-square&logo=google&logoColor=white)
 
 ---
 

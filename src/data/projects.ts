@@ -124,7 +124,7 @@ export const projects: Project[] = [
     outcome:
       "Task creation time dropped from 3-5 minutes to under 30 seconds. Now used daily as the primary interface for sprint management.",
     tech: ["Node.js", "Telegraf", "Anthropic API", "SheetMaster SDK", "Railway"],
-    github: "https://github.com/asisrasyid/telegram-task-bot",
+    github: "https://github.com/asisrasyid/tg-task-bot",
     featured: false,
   },
   {
@@ -132,21 +132,65 @@ export const projects: Project[] = [
     slug: "sheetmaster-sdk",
     title: "SheetMaster SDK",
     description:
-      "JavaScript/TypeScript SDK for SheetMaster — a Google Sheets-based project management API. Simplifies board, task, and subtask operations for any Node.js app.",
+      "TypeScript SDK that connects AI agents and any Node.js app to SheetMaster task boards — the plugin layer between your tools and your todo/project system.",
     longDescription:
-      "SheetMaster uses Google Sheets as a lightweight project management backend. This SDK wraps the raw API into a clean, typed interface — making it easy to integrate board and task management into any tool: bots, CLIs, web apps, or AI agents.",
+      "SheetMaster SDK is the connector layer used by every AI agent and bot in this ecosystem. It wraps the SheetMaster API (Google Sheets-based) into a clean typed interface — so any tool, whether a Telegram bot, CLI agent, or local chat app, can read boards, create tasks, move cards, and update subtasks with a single import.",
     highlights: [
-      "Typed methods for all SheetMaster actions: getBoards, getBoard, createTask, moveTask, updateSubTask",
-      "Handles redirect-based Google Apps Script authentication automatically",
-      "Used by Telegram Task Bot and Local Claude Chat internally",
-      "Zero dependencies beyond Node.js built-ins",
+      "Full typed coverage: getBoards, getBoard, createTask, moveTask, updateSubTask, and more",
+      "Handles Google Apps Script redirect auth automatically — no boilerplate",
+      "Used internally by Telegram Task Bot, Local Claude Chat, and Claude Code CLI",
+      "Drop-in plugin for any AI agent that needs task/project awareness",
     ],
     challenges:
-      "Google Apps Script redirects POST requests to GET — the SDK needed a custom HTTP client that follows redirects correctly without losing the request body.",
+      "Google Apps Script redirects POST to GET — the SDK needed a custom HTTP client that follows redirects correctly without losing the request body, which standard fetch/axios handle incorrectly.",
     outcome:
-      "Reusable across all personal projects — any tool can now integrate SheetMaster in minutes instead of re-implementing the HTTP layer from scratch.",
-    tech: ["Node.js", "TypeScript", "Google Apps Script"],
+      "Every agent in the ecosystem shares one SDK. Adding task awareness to a new tool takes minutes — just import and call. The foundation of the personal AI productivity stack.",
+    tech: ["TypeScript", "Node.js", "Google Apps Script"],
     github: "https://github.com/asisrasyid/sheetmaster-sdk",
+    featured: false,
+  },
+  {
+    id: "sheetmaster",
+    slug: "sheetmaster",
+    title: "SheetMaster",
+    description:
+      "All-in-one SaaS task and project management system built on Google Sheets — boards, tasks, subtasks, labels, and role-based access via a REST API.",
+    longDescription:
+      "SheetMaster is a lightweight SaaS built on Google Apps Script and Google Sheets as the backend. It provides a full project management API — boards, columns, tasks, subtasks, labels, assignees — without needing a server or database. Everything lives in Sheets, accessed via a secure REST-like API.",
+    highlights: [
+      "Full project board API: create boards, columns, tasks, subtasks, labels",
+      "API key-based authentication with role management (owner, contributor, viewer)",
+      "Powers the entire personal AI agent ecosystem as the task backend",
+      "Zero infrastructure cost — runs entirely on Google Apps Script",
+    ],
+    challenges:
+      "Building a consistent REST-like API on top of Google Apps Script's execution model, which has no persistent state and limited concurrency — required careful design of the data layer in Sheets.",
+    outcome:
+      "A fully functional project management backend used daily across multiple tools and AI agents — proving that powerful APIs don't always need expensive infrastructure.",
+    tech: ["Google Apps Script", "JavaScript", "HTML", "Google Sheets API"],
+    github: "https://github.com/asisrasyid/SheetMaster",
+    featured: false,
+  },
+  {
+    id: "local-claude-code-cli",
+    slug: "local-claude-code-cli",
+    title: "Local Claude Code CLI",
+    description:
+      "All-in-one AI Agent CLI powered by Claude Code — solves commands, manages tasks, and integrates with your local dev environment autonomously.",
+    longDescription:
+      "An AI agent CLI built on top of Claude Code API. Acts as a smart command executor and task solver that understands your project context, reads local files, hits SheetMaster for task state, and takes autonomous action. Designed as the terminal-first interface for AI-assisted development.",
+    highlights: [
+      "Context-aware — reads project files and snap.md before executing any task",
+      "SheetMaster integration — knows your current sprint from the terminal",
+      "Autonomous multi-step execution via Claude Code tool use",
+      "TypeScript — typed, fast, and easy to extend with new commands",
+    ],
+    challenges:
+      "Designing the context window management so the agent always has the right information without hitting token limits — especially when dealing with large codebases.",
+    outcome:
+      "A personal power tool: run one command, get full AI-assisted task resolution with project awareness. Reduced the gap between 'having an idea' and 'it's done' significantly.",
+    tech: ["TypeScript", "Anthropic API", "Claude Code", "Node.js"],
+    github: "https://github.com/asisrasyid/local-claude-code-API-CLI",
     featured: false,
   },
 ];
